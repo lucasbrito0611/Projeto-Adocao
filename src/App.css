@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --azul-claro: #7AA4C4;
+    --azul-escuro: #688BA6;
+    --rosa-claro: #FFC2C2;
+    --rosa-escuro: #FF8F8F;
+}
+
+.texto-colorido {
+    background-image: linear-gradient(to right, var(--azul-escuro), var(--rosa-claro));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

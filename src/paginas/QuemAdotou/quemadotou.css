@@ -1,0 +1,13 @@
+.container-relatorios {
+    margin-top: 4em;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    margin-bottom: 6em;
+    & h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+} 

@@ -1,0 +1,222 @@
+.adote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 8em;
+    padding: 0em 5em;
+    & h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 50px;
+        margin-bottom: 2em;
+    }
+}
+
+.container-adote {
+    display: flex;
+    gap: 4em;
+    align-items: flex-start;
+
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    & h2 {
+        text-align: center;
+        margin: 0 auto;
+        color: var(--azul-escuro);
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+.accordion-body {
+    background-color: var(--rosa-claro);
+    padding: 0;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.accordion-button {
+    background-color: var(--rosa-escuro);
+    border-radius: 12px 12px 0px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: var(--rosa-escuro);
+    box-shadow: none;
+}
+
+.accordion-item {
+    margin-top: 0.5em;
+    border: none;
+    width: 250px;
+}
+
+.option {
+    padding: 1rem 1.25rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.option:last-child {
+    border: none;
+}
+
+.option p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.animais-adocao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} 
+
+.ordenacao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-right: 4.1rem;
+    gap: 1.2em;
+}
+ 
+.ordenar-txt {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--azul-escuro);
+}
+
+#ordenar {
+    width: 255px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--azul-escuro), var(--rosa-claro));
+    border-image-slice: 1;
+    cursor: pointer;
+    & option {
+        cursor: pointer;
+        background-color: var(--rosa-escuro);
+        color: white;
+    }
+}
+
+.animal-search {
+    display: flex;
+    align-items: center;
+    margin-right: 38.5rem;
+    & button {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: .3rem;
+        background-color: var(--azul-escuro);
+        border: 2px solid var(--azul-escuro);
+        border-radius: 4px;
+        font-size: 1.1rem;
+        transition: .4s;
+    }
+    & button:hover {
+        background-color: var(--rosa-claro);
+        color: var(--azul-escuro);
+    }
+}
+
+#animal {
+    border-image: linear-gradient(to right, var(--azul-escuro), var(--rosa-claro));
+    border-image-slice: 1;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    padding-left: .3rem;
+    color: black;
+    outline: none;
+}
+
+.animal-search-txt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1rem;
+    color: var(--azul-escuro);
+}
+
+.adote-animais {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1100px;
+    gap: 8rem;
+    margin-right: 1rem;
+    margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-adote {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ordenacao, .animal-search {
+        margin-right: 0rem;
+    }
+
+    .animais-adocao {
+        align-items: center;
+    }
+
+    .adote-animais { 
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .adote h1 {
+        font-size: 40px;
+    }
+    
+    .adote-animais {
+        width: 500px;
+    }
+
+    .ordenar-txt {
+        font-size: 25px;
+    }
+
+    #ordenar {
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .animal-search-txt {
+        font-size: 18px;
+    }
+
+    #animal {
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .animal-search button {
+        width: 25px;
+        height: 25px;
+    }
+}

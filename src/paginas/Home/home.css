@@ -1,0 +1,306 @@
+.introducao {
+    display: flex;
+    gap: 2rem;
+}
+
+.container-texto-introducao {
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    & h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    & p {
+        margin-top: 35px;
+        font-size: 20px;
+        width: 50%;
+        color: black;
+        opacity: 70%;
+        text-align: center;
+        line-height: 1.5;
+    }
+    & button {
+        margin-top: 2rem;
+        background-color: var(--azul-escuro);
+        color: white;
+        border: none;
+        width: 234px;
+        height: 66px;
+        font-size: 30px;
+        border-radius: 20px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: .4s;
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    & button:hover {
+        background-color: var(--azul-claro);
+    }
+}
+
+.imgs-introducao {
+    position: relative;
+    right:0;
+}
+
+.gato {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.animais {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h2 {
+        font-size: 1.8rem; 
+    }
+}
+
+.container-animais {
+    display: flex;
+    gap: 10rem;
+}
+
+.veja-mais {
+    width: 240px;
+    height: 70px;
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    border: none;
+    margin-top: 13rem;
+    margin-bottom: 8rem;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+    & a {
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.motivo {
+    margin-top: 3rem;
+    & h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+.container-motivos {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.container-motivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    justify-content: center;
+    & p {
+        width: 340px;
+        text-align: center;
+        font-size: 18px;
+    }
+    & img {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+.container-motivo:nth-child(3) p{
+    width: 350px;
+}
+
+.h3-motivo {
+    color: black;
+    font-size: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+.cuidados {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    & > h2 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+}
+
+.container-cachorro, .container-gato {
+    display: flex;
+}
+
+.container-informacoes-cuidados {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 5rem;
+    justify-content: center;
+    width: 720.5px;
+    height: 676px;
+    background-color: var(--rosa-claro);
+    & > div {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        & figure {
+            margin-left: 3rem;
+        }
+        & h3 {
+            color: black;
+            font-size: 35px;
+        }
+        & p {
+            color: black;
+            font-size: 15px;
+            opacity: 0.6;
+            max-width: 480px;
+        }
+        & div {
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+        }
+    }
+}
+
+.funcionamento {
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h2 {
+        margin-bottom: 3rem;
+        font-size: 2.3rem;
+    }
+}
+
+.container-funcionamentos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10rem;
+}
+
+.container-funcionamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & figure {
+        background-color: var(--azul-escuro);
+        max-width: 170px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        clip-path: circle(49%);
+    }
+    & p {
+        max-width: 260px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .home h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .imgs-introducao {
+        display: none;
+    }
+
+    .container-animais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .container-motivos {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+
+    }
+
+    .container-funcionamentos {
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    
+}
+ 
+@media screen and (max-width: 1450px) {
+    .container-cachorro, .container-gato {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+    .cuidados > div:last-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cuidados-imgs {
+      width: 100%;
+    }
+
+    .container-informacoes-cuidados {
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container-informacoes-cuidados > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        & figure {
+            margin-left: 0;
+        }
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & p, h3 {
+                text-align: center;
+            }
+        }
+      }
+}

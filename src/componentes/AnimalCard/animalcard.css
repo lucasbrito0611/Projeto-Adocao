@@ -1,0 +1,89 @@
+.container-card {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    gap: 8rem; 
+}
+
+.container-img-1 {
+    position: relative;
+}
+
+.container-img-2 {
+    width: 250px;
+    height: 269px;
+    background-color: var(--rosa-claro);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.animal-imagem img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-informacoes {
+    position: absolute;
+    top: 225px;
+    width: 250px;
+    height: 320px;
+    background-color: var(--azul-escuro);
+    border: 20px;
+    border-radius: 20px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 2em;
+    margin-top: 4.5em;
+    & h3 {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: .4rem 0;
+    }
+    & h4 {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.informacoes-local, .informacoes-sexo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.favorito img {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    cursor: pointer; 
+}
+
+.botao-adote {
+    display: block;
+    margin: 1rem auto;
+    background-color: #D887FF;
+    width: 146px;
+    height: 39px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    & a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    }
+}
