@@ -1,12 +1,12 @@
 import './relatoriocard.css'
 
-function RelatorioCard(props) {
+function RelatorioCard({imagem, nome, texto}) {
     return (
         <div className="container-relatorioCard">
-            <img src={props.imagem} alt="" className="img-quemadotou"/>
+            <img src={imagem} alt="" className="img-quemadotou"/>
             <div className="relatorio-info">
-                <h2>{props.nome}</h2>
-                <p>{props.texto}</p> 
+                <h2>{nome}</h2>
+                <p>{texto}</p> 
             </div>
         </div>
     )
