@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './relatoriocard.css'
 
 function RelatorioCard({imagem, nome, texto}) {
@@ -10,6 +12,11 @@ function RelatorioCard({imagem, nome, texto}) {
             </div>
         </div>
     )
+}
+
+RelatorioCard.propTypes = {
+    nome: PropTypes.string,
+    texto: PropTypes.string
 }
 
 export default RelatorioCard;

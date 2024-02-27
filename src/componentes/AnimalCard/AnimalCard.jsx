@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'; 
+import PropTypes from 'prop-types';
 
 import localImg from '../../assets/local.png';
 import femea from '../../assets/femea.png';
@@ -33,6 +34,12 @@ function AnimalCard({nome, imagem, local, sexo}) {
             </div>
         </div>
     )
+}
+
+AnimalCard.propTypes = {
+    nome: PropTypes.string,
+    local: PropTypes.string,
+    sexo: PropTypes.string,
 }
 
 export default AnimalCard;
