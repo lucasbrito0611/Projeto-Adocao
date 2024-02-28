@@ -9,12 +9,11 @@ import './adote.css'
 function Adote() {
     const [search, setSearch] = useState('')
     const [resultadoBuscaNome, setResultadoBuscaNome] = useState([])
-    const [resultadoFiltroEspecie, setResultadoFiltroEspecie] = useState([])
 
     const buscaNome = animais.filter(item => item.nome.includes(search))
 
-    function BuscarAnimais(evento) {
-        evento.preventDefault()
+    function BuscarAnimais(e) {
+        e.preventDefault()
         
         if (buscaNome == '') {
             alert('Animal não encontrado') 
