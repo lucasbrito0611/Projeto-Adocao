@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import navbar_icon from '../../assets/nav-bar-icon.png';
 
-import './header-footer.css';
+import './layout.css';
 
 function Header() {
     const location = useLocation()

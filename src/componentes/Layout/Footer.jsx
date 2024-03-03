@@ -10,7 +10,7 @@ import premier from '../../assets/premier.png';
 import petz from '../../assets/petz.png';
 import lupa from '../../assets/lupa.png';
 
-import './header-footer.css';
+import './layout.css';
 
 function Footer() { 
     return ( 
